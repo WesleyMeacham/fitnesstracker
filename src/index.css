@@ -1,13 +1,140 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* NavBar */
+
+header {
+	display: flex;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+}
+
+.siteName {
+	border: cornflowerblue 5px solid;
+	border-radius: 15px;
+}
+
+.siteTitle {
+	padding: 10px;
+}
+
+button {
+	background-color: cornflowerblue;
+	margin: 10px;
+	width: 100px;
+	height: 50px;
+	border: none;
+	border-radius: 15px;
+}
+
+/* Main Containers */
+
+.container {
+	border: solid cornflowerblue 5px;
+	border-radius: 15px;
+	margin: 20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.cardDisplay {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+}
+
+/* Display Cards for items returned from API */
+.actCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	margin: 20px;
+	border: solid cornflowerblue 1px;
+	border-radius: 15px;
+	width: 250px;
+}
+
+.routCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	margin: 20px;
+	border: solid cornflowerblue 1px;
+	border-radius: 15px;
+	width: 410px;
+}
+
+/* Styleing for forms */
+
+.actForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #edbc64;
+	padding: 20px;
+	border: cornflowerblue solid 1px;
+	border-radius: 15px;
+	height: 420px;
+}
+
+.updateForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #edbc64;
+	border: cornflowerblue solid 1px;
+	border-radius: 15px;
+}
+
+.open {
+	display: none;
+}
+
+form > h1,
+h3 {
+	margin: 10px;
+}
+
+input,
+textarea,
+select {
+	margin: 10px;
+	border: solid cornflowerblue 1px;
+	border-radius: 15px;
+	padding: 20px;
+}
+
+label {
+	margin-left: 15px;
+}
+
+.selectAct {
+	width: 94%;
+}
+
+.actCardButton,
+.deleteActivity {
+	padding: 5px;
+	height: 25px;
+	width: 80%;
+	border-radius: 5px;
+}
+
+.deleteRoutine,
+.deleteActivity {
+	background-color: #ed7864;
 }
